@@ -1,0 +1,84 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Student_page.aspx.cs" Inherits="Stund_registration.Student_page" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 1532px;
+        }
+        .auto-style3 {
+            height: 23px;
+        }
+        .auto-style4 {
+            height: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr align="center">
+                            <td class="auto-style2">Student Registration</td>
+                            <td></td>
+                        </tr>
+                        <tr align="center">
+                     
+                            <td class="auto-style2">
+                                <asp:Label ID="Label1" runat="server" Text="Student_id"></asp:Label>
+                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                            </td></td>
+                        </tr>
+                        <tr align="center">
+                            <td class="auto-style2">
+                                <asp:Label ID="Label5" runat="server" Text="Student_name"></asp:Label>
+                                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="auto-style2">
+                                <asp:Label ID="Label3" runat="server" Text="Email"></asp:Label>
+                                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <asp:Label ID="Label4" runat="server" Text="Password"></asp:Label>
+                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+        </table>
+        <table class="auto-style1">
+            <tr align="center">
+                <td class="auto-style4">
+                    <asp:Label ID="Label9" runat="server" Text="Course"></asp:Label>
+                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr align="center">
+                <td class="auto-style3">
+                    <asp:Button ID="Button1" runat="server" Text="Show Data" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
