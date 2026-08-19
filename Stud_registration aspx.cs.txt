@@ -1,0 +1,62 @@
+using System;
+
+
+
+namespace Stund_registration
+{
+    public partial class Student_page : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                lblMessage.Text = "";
+            }
+        }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+         
+            string name = txtName.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string password = txtPassword.Text();
+            string course = ddlCourse.SelectedValue;
+            
+           
+            if (name == "")
+            {
+                lblMessage.Text = "student name.";
+               
+                return;
+            }
+
+            if (email == "")
+            {
+                lblMessage.Text = " email.";
+                
+                return;
+            }
+
+            if (password == "")
+            {
+                lblMessage.Text = "password.";
+              
+                return;
+            }
+
+
+            
+
+            if (course == "")
+            {
+                lblMessage.Text = "course.";
+               
+                return;
+            }
+
+          
+
+          
+        }
+    }
+}
